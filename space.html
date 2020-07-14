@@ -1,0 +1,83 @@
+﻿    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Memory Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="scriptsheet" href="JavaScript.js">
+        <link rel="stylesheet" href="StyleSheet.css">
+        <link rel="stylesheet" href="animate.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.13.0/dist/sweetalert2.all.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://use.fontawesome.com/ad4dcfdd90.js"></script>
+        <link rel="scriptsheet" href="JavaScript.js">
+        <link rel="stylesheet" href="StyleSheet.css">
+    </head>
+
+    <body onload="renkInterval()">
+
+        <div>
+            <span style="position: fixed; font-size: 28px; color: gold; font-weight: bold; top:80px; left:80px;"><i class="fa fa-star" aria-hidden="true"></i> Puan: <span id="puan">0</span> </span>
+
+        </div>
+
+
+        <section class="memory-game">
+            <div class="memory-card" data-framework="milky-way">
+                <img class="front-face-space" src="planets/milky-way.svg" alt="milky-way" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="milky-way">
+                <img class="front-face-space" src="planets/milky-way.svg" alt="milky-way" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="neptune">
+                <img class="front-face-space" src="planets/neptune.svg" alt="neptune" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="neptune">
+                <img class="front-face-space" src="planets/neptune.svg" alt="neptune" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="saturn">
+                <img class="front-face-space" src="planets/saturn.svg" alt="saturn" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="saturn">
+                <img class="front-face-space" src="planets/saturn.svg" alt="saturn" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="venus">
+                <img class="front-face-space" src="planets/venus.svg" alt="venus" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="venus">
+                <img class="front-face-space" src="planets/venus.svg" alt="venus" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="spaceship">
+                <img class="front-face-space" src="planets/spaceship.svg" alt="spaceship" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="spaceship">
+                <img class="front-face-space" src="planets/spaceship.svg" alt="spaceship" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="planet-earth">
+                <img class="front-face-space" src="planets/planet-earth.svg" alt="planet-earth" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="planet-earth">
+                <img class="front-face-space" src="planets/planet-earth.svg" alt="planet-earth" />
+                <img class="back-face-space" src="planets/solar-system.svg" alt="JS Badge" />
+            </div>
+        </section>
+
+
+
+        <script src="JavaScript.js"></script>
+
+    </body>
+    </html>

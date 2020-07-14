@@ -1,0 +1,168 @@
+﻿    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        background: #060AB2;
+    }
+
+    .memory-game {
+        width: 640px;
+        height: 640px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        perspective: 1000px;
+    }
+
+    .memory-card {
+        width: calc(25% - 10px);
+        height: calc(33.333% - 10px);
+        margin: 5px;
+        position: relative;
+        transform: scale(1);
+        transform-style: preserve-3d;
+        transition: transform .5s;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    }
+
+        .memory-card:active {
+            transform: scale(0.97);
+            transition: transform .2s;
+        }
+
+        .memory-card.flip {
+            transform: rotateY(180deg);
+        }
+
+
+    .front-face,
+    .back-face {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: absolute;
+        border-radius: 5px;
+        background: #1C7CCC;
+        backface-visibility: hidden;
+    }
+    .front-face {
+        transform: rotateY(180deg);
+    }
+
+
+    .front-face-space,
+    .back-face-space {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: absolute;
+        border-radius: 5px;
+        background: #4d4d4d;
+        backface-visibility: hidden;
+    }
+    .front-face-space {
+        transform: rotateY(180deg);
+    }
+
+
+    .front-face-animals,
+    .back-face-animals {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: absolute;
+        border-radius: 5px;
+        background: #b0e0e6;
+        backface-visibility: hidden;
+    }
+    .front-face-animals {
+        transform: rotateY(180deg);
+    }
+
+
+    .front-face-fruits,
+    .back-face-fruits {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: absolute;
+        border-radius: 5px;
+        background: #d4d41d;
+        backface-visibility: hidden;
+    }
+    .front-face-fruits {
+        transform: rotateY(180deg);
+    }
+
+
+    .front-face-dinosaur,
+    .back-face-dinosaur {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: absolute;
+        border-radius: 5px;
+        background: #8FBC8F;
+        backface-visibility: hidden;
+    }
+    .front-face-dinosaur {
+        transform: rotateY(180deg);
+}
+    
+
+    body {
+        background: white; /* İlk renk site açılınca bu renk görünecek */
+        transition: background 10s;
+    }
+
+
+    button.button {
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.1em solid #FFFFFF;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 300;
+        color: #4d4d4d;
+        text-align: center;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        border-radius: 24px;
+        border: 2px solid #1C7CCC;
+    }
+    button.button:hover {
+        background-color: #1C7CCC;
+        color: white;
+    }
+
+
+    @media all and (max-width:30em) {
+         button.button {
+            display: block;
+            margin: 0.4em auto;
+        }
+    }
+
+    .bouncy{
+    animation:bouncy 5s infinite linear;
+    position:relative;
+    }
+    @keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+    }
+
+

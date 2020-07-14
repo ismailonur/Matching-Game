@@ -1,0 +1,81 @@
+﻿    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Memory Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="scriptsheet" href="JavaScript.js">
+        <link rel="stylesheet" href="StyleSheet.css">
+        <link rel="stylesheet" href="animate.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.13.0/dist/sweetalert2.all.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://use.fontawesome.com/ad4dcfdd90.js"></script>
+        <link rel="scriptsheet" href="JavaScript.js">
+        <link rel="stylesheet" href="StyleSheet.css">
+    </head>
+
+    <body onload="renkInterval()">
+
+        <div>
+            <span style="position: fixed; font-size: 28px; color: gold; font-weight: bold; top:80px; left:80px;"><i class="fa fa-star" aria-hidden="true"></i> Puan: <span id="puan">0</span> </span>
+
+        </div>
+
+
+        <section class="memory-game">
+            <div class="memory-card" data-framework="chameleon">
+                <img class="front-face-animals" src="animals/chameleon.svg" alt="chameleon" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="chameleon">
+                <img class="front-face-animals" src="animals/chameleon.svg" alt="chameleon" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="dolphin">
+                <img class="front-face-animals" src="animals/dolphin.svg" alt="dolphin" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="dolphin">
+                <img class="front-face-animals" src="animals/dolphin.svg" alt="dolphin" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="elephant">
+                <img class="front-face-animals" src="animals/elephant.svg" alt="elephant" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="elephant">
+                <img class="front-face-animals" src="animals/elephant.svg" alt="elephant" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="flamingos">
+                <img class="front-face-animals" src="animals/flamingos.svg" alt="flamingos" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="flamingos">
+                <img class="front-face-animals" src="animals/flamingos.svg" alt="flamingos" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="kiwi">
+                <img class="front-face-animals" src="animals/kiwi.svg" alt="kiwi" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="kiwi">
+                <img class="front-face-animals" src="animals/kiwi.svg" alt="kiwi" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="turtle">
+                <img class="front-face-animals" src="animals/turtle.svg" alt="turtle" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="turtle">
+                <img class="front-face-animals" src="animals/turtle.svg" alt="turtle" />
+                <img class="back-face-animals" src="animals/zoo.svg" alt="JS Badge" />
+            </div>
+        </section>
+
+        <script src="JavaScript.js"></script>
+
+    </body>
+    </html>

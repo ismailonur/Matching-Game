@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <title>My super game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/ad4dcfdd90.js"></script>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="scriptsheet" href="JavaScript.js">
+
+
+    <style>
+        button.button {
+            display: inline-block;
+            padding: 0.35em 1.2em;
+            border: 0.1em solid #FFFFFF;
+            margin: 0 0.3em 0.3em 0;
+            border-radius: 0.12em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Roboto',sans-serif;
+            font-weight: 300;
+            color: #4d4d4d;
+            text-align: center;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            border-radius: 24px;
+            border: 2px solid #1C7CCC;
+        }
+
+
+             button.button:hover {
+                background-color: #1C7CCC;
+                color: white;
+             }
+
+        @media all and (max-width:30em) {
+            button.button {
+                display: block;
+                margin: 0.4em auto;
+            }
+        }
+
+        .bouncy {
+            animation: bouncy 5s infinite linear;
+            position: relative;
+        }
+
+        .mygame {
+            position: relative;
+            background-color: #FFFFEA;
+            height: 350px;
+            width: 100%;
+            margin-top: -100px;
+            left: 210px;
+            -webkit-box-shadow: inset 0px 0px 130px 80px rgba(241,231,101,1);
+            -moz-box-shadow: inset 0px 0px 130px 80px rgba(241,231,101,1);
+            box-shadow: 0px 0px 130px 80px rgba(241,231,101,1);
+            border-radius: 60px 60px 60px 60px;
+            -moz-border-radius: 60px 60px 60px 60px;
+            -webkit-border-radius: 60px 60px 60px 60px;
+            border: 10px outset #1C7CCC;
+            background: rgba(254,182,67,1);
+            background: -moz-linear-gradient(-45deg, rgba(254,182,67,1) 0%, rgba(241,231,101,1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(254,182,67,1)), color-stop(100%, rgba(241,231,101,1)));
+            background: -webkit-linear-gradient(-45deg, rgba(254,182,67,1) 0%, rgba(241,231,101,1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(254,182,67,1) 0%, rgba(241,231,101,1) 100%);
+            background: linear-gradient(135deg, rgba(254,182,67,1) 0%, rgba(241,231,101,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb643', endColorstr='#f1e765', GradientType=1 );
+        }
+
+        .bouncy:hover {
+            transform: scale(.90);
+            -webkit-transform: scale(.90);
+        }
+
+        #return {
+            transition: all 3s ease-in-out;
+            cursor: pointer;
+        }
+
+            #return:hover {
+                transform: rotate(3600deg);
+                -webkit-transform: rotate(3600deg);
+            }
+        .bg-dark {
+            background-color: #1C7CCC !important;
+        }
+
+        @keyframes bouncy {
+            0% {
+                top: 0em
+            }
+            40% {
+                top: 0em
+            }
+            43% {
+                top: -0.9em
+            }
+            46% {
+                top: 0em
+            }
+            48% {
+                top: -0.4em
+            }
+            50% {
+                top: 0em
+            }
+            100% {
+                top: 0em;
+            }
+        }
+    </style>
+    </head>
+
+    <body style="background-color:#D8D8D8;">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="color:#1D2D44">
+            <a class="navbar-brand" href="#">Matching Game</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container" style=" position: relative; left: -180px; margin-top:150px; color: #1D2D44; ">
+            
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <h2> <i class="fa fa-angle-double-down" aria-hidden="true"> <span style="font-weight: bold; font-family: cursive;"> Category</span></i></h2>
+                    <div class="list-group">
+                        <button id="btn1" style="width: 80%; height: 10%;" onclick="change('index.html')" class="button bouncy">JavaScript </button>
+
+                        <button id="btn2" style="animation-delay:0.07s; width: 80%; height: 10%;" onclick="change('animals.html')" class="button bouncy">Animals</button>
+                        
+                        <button id="btn3" style="animation-delay:0.14s; width: 80%; height: 10%;" onclick="change('fruits.html')" class="button bouncy">Fruits</button>
+
+                        <button id="btn4" style="animation-delay:0.21s; width: 80%; height: 10%;" onclick="change('dinosaur.html')" class="button bouncy">Dinosaurs</button>
+
+                        <button id="btn5" style="animation-delay:0.28s; width: 80%; height: 10%; " onclick="change('space.html')" class="button bouncy">Space</button>
+                    </div>
+
+                    <br />
+
+                   
+
+                  
+
+                    <hr class="d-sm-none">
+                </div>
+                        <div class="col-sm-8">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                            <div class="mygame">
+                                <center>
+                                    <br />
+                                    <br />
+                                    <center>
+                                        <span style="color: #1D2D44; font-weight: bold;">You have selected</span>
+                                        <div id="category">
+                                            <span id="test1" style="color: #ff0000; font-weight: bold; font-size:20px; ">Select Category in the Left.</span>
+                                        </div>
+
+                                        <h2 style="color: #1C7CCC; font-weight: bold;" class="animated  tada delay-2s">
+                                            If you're ready <br /> Let's Start! <br />
+                                        </h2>
+
+
+                                    </center>
+                                    
+
+                                    <div id="changeit">
+                                        <button type="button" id="err" class="btn btn-default" style="color:#061A40">
+                                            <div id="return">
+                                                <i class="fa fa-play-circle fa-5x animated  zoomInDown" aria-hidden="true"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                    <br />
+                                    <br />
+
+
+
+                                </center>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+        </div>
+
+
+        <script>
+        
+
+            $(document).ready(function () {
+                var alan = document.getElementById('category');
+                $("#btn1").click(function () {
+                   // $("#test1").text("You have selected JavaScript.");
+                    
+                    var text = ' <p id="test1" class="animated  heartBeat " style="color: #1D2D44; font-weight: bold; font-size:30px; ">JavaScript</p>';
+                    alan.innerHTML = text;
+                });
+                $("#btn2").click(function () {
+                   // $("#test1").text("You have selected Animals.");
+                   
+                    var text = ' <p id="test1" class="animated  heartBeat " style="color: #1D2D44; font-weight: bold; font-size:30px; ">Animals</p>';
+                    alan.innerHTML = text;
+
+                });
+                $("#btn3").click(function () {
+                    //$("#test1").text("You have selected Fruits.");
+                    var text = ' <p id="test1" class="animated  heartBeat " style="color: #1D2D44; font-weight: bold; font-size:30px; ">Fruits</p>';
+                    alan.innerHTML = text;
+                });
+                $("#btn4").click(function () {
+                   // $("#test1").text("You have selected Dinasours.");
+                    var text = ' <p id="test1" class="animated  heartBeat " style="color: #1D2D44; font-weight: bold; font-size:30px; ">Dinasours</p>';
+                    alan.innerHTML = text;
+                });
+                $("#btn5").click(function () {
+                   //$("#test1").text("You have selected Space.");
+                    var text = ' <p id="test1" class="animated  heartBeat " style="color: #1D2D44; font-weight: bold; font-size:30px; ">Space</p>';
+                    alan.innerHTML = text;
+                });
+
+                $("#err").click(function () {
+                    
+                    //$("#test1").text("You have selected Space.");
+                    var text = ' <p id="test1" class="animated  heartBeat " style="color: #ff0000; font-weight: bold; font-size:25px; ">Select Category in the Left.</p>';
+                    alan.innerHTML = text;
+                });
+
+
+            });
+        </script>
+
+
+
+        <script type="text/javascript">
+
+            function change(value) {
+                var alan = document.getElementById('changeit');
+                var git = " ' " + value + "'";
+               
+                var text = '<button type="button" class="btn btn-default" style="color:#061A40"  onclick="window.location.href =' + git + '"    <div id="return" > <i class="fa fa-play-circle fa-5x animated  zoomInDown" aria-hidden="true"></i>  </div ></button >';
+
+                alan.innerHTML = text;
+            }
+            </script>  
+    </body>
+    </html>

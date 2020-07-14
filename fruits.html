@@ -1,0 +1,80 @@
+﻿    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Memory Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="scriptsheet" href="JavaScript.js">
+        <link rel="stylesheet" href="StyleSheet.css">
+        <link rel="stylesheet" href="animate.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.13.0/dist/sweetalert2.all.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://use.fontawesome.com/ad4dcfdd90.js"></script>
+        <link rel="scriptsheet" href="JavaScript.js">
+        <link rel="stylesheet" href="StyleSheet.css">
+    </head>
+
+    <body onload="renkInterval()">
+
+        <div>
+            <span style="position: fixed; font-size: 28px; color: gold; font-weight: bold; top:80px; left:80px;"><i class="fa fa-star" aria-hidden="true"></i> Puan: <span id="puan">0</span> </span>
+
+        </div>
+
+        <section class="memory-game">
+            <div class="memory-card" data-framework="berry">
+                <img class="front-face-fruits" src="fruits/berry.svg" alt="berry" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="berry">
+                <img class="front-face-fruits" src="fruits/berry.svg" alt="berry" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="broccoli">
+                <img class="front-face-fruits" src="fruits/broccoli.svg" alt="broccoli" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="broccoli">
+                <img class="front-face-fruits" src="fruits/broccoli.svg" alt="broccoli" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="cherry">
+                <img class="front-face-fruits" src="fruits/cherry.svg" alt="cherry" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="cherry">
+                <img class="front-face-fruits" src="fruits/cherry.svg" alt="cherry" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="grape">
+                <img class="front-face-fruits" src="fruits/grape.svg" alt="grape" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="grape">
+                <img class="front-face-fruits" src="fruits/grape.svg" alt="grape" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="melon">
+                <img class="front-face-fruits" src="fruits/melon.svg" alt="melon" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="melon">
+                <img class="front-face-fruits" src="fruits/melon.svg" alt="melon" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="strawberry">
+                <img class="front-face-fruits" src="fruits/strawberry.svg" alt="strawberry" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+            <div class="memory-card" data-framework="strawberry">
+                <img class="front-face-fruits" src="fruits/strawberry.svg" alt="strawberry" />
+                <img class="back-face-fruits" src="fruits/fruit-tree.svg" alt="JS Badge" />
+            </div>
+        </section>
+
+        <script src="JavaScript.js"></script>
+
+    </body>
+    </html>
